@@ -1,0 +1,115 @@
+@import url('https://font.googleapis.com/css/family=Poppins:300,400,500,600,700,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #24384d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: .7rem;
+    letter-spacing: 1px;
+}
+
+h5 {
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
+
+.card {
+    background-color: #fff;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.img-card {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.img-card img {
+    background-position: center;
+    background-size: cover;
+}
+
+.review {
+    padding-bottom: 1rem;
+}
+
+.star {
+    color: #ff5733;
+    font-size: .8rem;
+}
+
+.prevBtn, .nextBtn {
+    color: #ff5733;
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+    max-height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.prevBtn {
+    position: absolute;
+    top: 10%;
+    right: 14%;
+}
+
+.nextBtn {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.btn:hover {
+    background-color: #ff5733;
+    color: #fff;
+}
+
+@media only screen and (max-width: 624px) {
+    .card {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .prevBtn {
+    position: absolute;
+    top: 10%;
+    right: 16%;
+    }
+}
+
+/* Creator: thegoddysmart */
